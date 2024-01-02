@@ -15,15 +15,17 @@ Adders are digital circuits that carry out addition of numbers.
 
 Half adder is a combinational circuit that performs simple addition of two binary numbers. The input variables designate the augend and addend bits; the output variables produce the sum and carry. It is necessary to specify two output variables because the result may consist of two binary digits.
 Sum = A’B+AB’ =A ⊕ B Carry = AB
+
+
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/327cdfb7-5c08-41f3-aee3-8b6cd64af4d1)
 Figure -01 HALF ADDER
 
-###Procedure
+##Procedure
 
 
 Connect the supply (+5V) to the circuit Switch ON the main switch If the output is 1, then the led glows.
 
-###Program
+##Program
 
 
 module project_3(sum,carry,a,b); 
@@ -33,17 +35,17 @@ xor sum1(sum,a,b);
 and carry1(carry,a,b); 
 endmodule
 
-###RTL Realization
+##RTL Realization
 
 
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/85ca17d0-a590-4eae-bc8f-97b2ce0e7446)
 
-###TIMING DIAGRAM
+##TIMING DIAGRAM
 
 
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/28d78992-5495-4365-9b5c-3105ca101647)
 
-###TRUTH TABLE
+##TRUTH TABLE
 
 
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/b0adab89-c17f-4955-a114-86a652ded90b)
@@ -59,7 +61,7 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-###Program
+##Program
 
 
 module project_3_2(a,b,c,sum,carry);
@@ -69,23 +71,23 @@ xor(sum,a,b,c);
 assign carry=a&b | b&c | a&c;
 endmodule
 
-###RTL Realization
+##RTL Realization
 
 
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/135c9dac-0d2a-4424-a0c0-2d0588c7cf24)
 
-###TIMING DIAGRAM
+##TIMING DIAGRAM
 
 
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/a9c97f9c-8c6d-4092-815b-c7b766fa7788)
 
-###TRUTH TABLE
+##TRUTH TABLE
 
 
 ![image](https://github.com/Presilla27/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155127632/529c0af6-dccb-45b0-ab24-6541cc4e27db)
 
 
-### Result:
+## Result:
 
 
 Thus the given logic functions are implemented and their operations are verified using verilog programming
